@@ -1,0 +1,266 @@
+/* BALISE GENRALE */
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('Roboto-Black.ttf');
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: "Roboto Black";
+    font-weight: bold;
+}
+
+h4 {
+    font-family: "Roboto Black";
+}
+
+.contenaire {
+    width: 1200px;
+    margin: auto;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+    height: 5px;
+}
+
+.ligne i {
+    color: #5cadd1;
+}
+
+hr {
+    width: 45%;
+}
+
+.fas.fa-circle {
+    border-radius: 100px;
+    border: 4px solid #fff;
+}
+
+/* BARRE DE NAVIGATION */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: #ffffff;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    width: 25%;
+    margin: 0%;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+nav li a {
+    display: block;
+    color: #000000;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-top: 3px solid #5cadd1;
+}
+
+.logo {
+    height: 60px;
+    width: 257px;
+    padding-top: 5px;
+}
+
+.web {
+    width: 100%;
+}
+
+
+/* SECTION SLIDER */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    width: calc( 1600px * 2);
+    animation: diapo 13s infinite;
+}
+
+.slide {
+    float: left;
+    width: auto;
+}
+
+
+/* SLIDE ANIMATION */
+
+@keyframes diapo {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-1600px);
+    }
+    66% {
+        transform: translateX(-0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* ABSOLUTE TEXTE SLIDER */
+
+#presentation {
+    width: 100%;
+    padding-top: 70px;
+}
+
+.tete {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: -290px;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+.titre {
+    color: #ffffff;
+    margin-top: -140px;
+    margin-left: 8%;
+    width: 35%;
+}
+
+.titre h1 {
+    font-family: "Roboto Black";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.fleche {
+    border-radius: 0px 100px 100px 0px;
+    padding: 20px 10px;
+    background-color: rgba(1, 1, 1, .3);
+    height: 30px;
+    position: absolute;
+    left: 0%;
+    color:#ffffff;
+    text-align: center;
+}
+
+.fleche2 {
+    position: absolute;
+    border-radius: 100px 0px 0px 100px;
+    padding: 20px 10px;
+    background-color: rgba(1, 1, 1, .3);
+    height: 30px;
+    right: 0%;
+    color:#ffffff;
+    text-align: center;
+}
+
+strong {
+    color: rgb(92, 173, 209);
+}
+
+
+/* BOUTTON TITRE SLIDER */
+
+#presentation button {
+    background: rgb(92, 173, 209);
+    padding: 2% 3%;
+    color: #ffffff;
+    border-radius: 3px;
+    border-bottom: 2px solid #5cadd2;
+}
+
+/* SERVICE DE LENTREPRISE */
+
+#section_service {
+    margin-top: 100px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.article_service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taille {
+    width: 50%;
+    height: 380px;
+}
+
+.article_service img {
+    margin-left: 15%;
+}
+
+.pc {
+    width: auto;
+    height: 380px;
+}
+
+
+/* Service et Icone */
+
+.info {
+    margin: 5% 0 0 0;
+    width: 50%
+}
+
+.bloc {
+    display: flex;
+}
+
+.bloc .icone {
+    color: #5cadd1;
+    border: 1px solid #D3D3D3;
+    border-radius: 1000px;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    margin: 10px 15px;
+    padding: 22px 22px 20px 20px;
+}
+
+.icone i {
+    color: #5cadd1;
+}
+
+.rond {
+    position: absolute;
+    right: -12px;
+    top: 27px;
+}
